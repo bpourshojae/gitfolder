@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+    {% block block_body %}
+    <h1>This is Index HTML</h1>
+    {{text|upper}}
+    {{number|add:"23"}}
+    <a href="{% url 'basic_app:relative' %}">Link to relative</a>
+    {%endblock block_body%}
