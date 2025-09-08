@@ -11,3 +11,6 @@ def other(request):
 
 def relative_url(request):
     return  render(request,'basic_app/relative_url_template.html')
+
+def test_git(request):
+    return render(request,'basic_app/index.html')
